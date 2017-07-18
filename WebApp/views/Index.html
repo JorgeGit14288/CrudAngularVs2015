@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+
+<html ng-app="WebApp">
+<head>
+    <meta charset="utf-8">
+    <title>MVC AngularJS</title>
+    <!--importamos los css que utilizaremos-->
+    <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="../Content/bootstrap-theme.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div ng-view></div>
+    <h2>Estoy en el index principal, donde hare la plantilla</h2>
+
+
+
+    <!--en esta parte se tiene que renderizar todo-->
+
+
+
+
+    <!-- agregamos la referencia a los scripts que vamos a utiliar-->
+    <!--Angular-->
+    <script src="../scripts/angular.min.js"></script>
+    <script src="../scripts/angular-route.js"></script>
+    <!--Angular-->
+    <script src="../scripts/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="js/agenda.js"></script>
+    <script type="text/javascript" src="controllers/notasController.js"></script>
+    <script type="text/javascript" src="models/notasModel.js"></script>
+</body>
+</html>
