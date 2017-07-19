@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApp", "WebApp\WebApp.csproj", "{3B14C283-8C0C-4276-B38B-8DAFD3424866}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiRest", "ApiRest\ApiRest.csproj", "{880251B7-496C-4853-BB63-90B1C66A0AEE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{3B14C283-8C0C-4276-B38B-8DAFD3424866}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3B14C283-8C0C-4276-B38B-8DAFD3424866}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3B14C283-8C0C-4276-B38B-8DAFD3424866}.Release|Any CPU.Build.0 = Release|Any CPU
+		{880251B7-496C-4853-BB63-90B1C66A0AEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{880251B7-496C-4853-BB63-90B1C66A0AEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{880251B7-496C-4853-BB63-90B1C66A0AEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{880251B7-496C-4853-BB63-90B1C66A0AEE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

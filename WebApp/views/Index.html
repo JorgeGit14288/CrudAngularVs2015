@@ -1,33 +1,96 @@
 ﻿<!DOCTYPE html>
 
-<html ng-app="WebApp">
+<html ng-app="myApp">
 <head>
     <meta charset="utf-8">
-    <title>MVC AngularJS</title>
-    <!--importamos los css que utilizaremos-->
-    <link href="../Content/bootstrap.min.css" rel="stylesheet" />
-    <link href="../Content/bootstrap-theme.min.css" rel="stylesheet" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Navbar Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../Content/bootstrap.css" rel="stylesheet" />
 </head>
 <body>
-    <div ng-view></div>
-    <h2>Estoy en el index principal, donde hare la plantilla</h2>
+    < <div class="container">
+
+        <!-- Static navbar -->
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Crud AngularJs </a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Inicio</a></li>
+                        <li><a href="#">Usuarios</a></li>
+                        <li><a href="#">Agenda</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="./">Default <span class="sr-only">(current)</span></a></li>
+                        <li><a href="../navbar-static-top/">Static top</a></li>
+                        <li><a href="../navbar-fixed-top/">Fixed top</a></li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div><!--/.container-fluid -->
+        </nav>
+
+        <!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron">
+            <p><a href="#/!">Main</a></p>
+
+            <a href="#!red">Red</a>
+            <a href="#!green">Green</a>
+            <a href="#!blue">Blue</a>
+            <div ng-view>
+
+            </div>
+        </div>
+
+    </div> <!-- /container -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script>
+        var app = angular.module("myApp", ["ngRoute"]);
+        app.config(function ($routeProvider) {
+            $routeProvider
+            .when("/", {
+                templateUrl: "main.htm"
+            })
+            .when("/red", {
+                templateUrl: "red.htm"
+            })
+            .when("/green", {
+                templateUrl: "green.htm"
+            })
+            .when("/blue", {
+                templateUrl: "blue.htm"
+            });
+        });
+    </script>
 
 
+    <script src="scripts/angular.min.js"></script>
+    <script src="scripts/angular-route.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
 
-    <!--en esta parte se tiene que renderizar todo-->
+    <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            //  alert('estoy en jquery');
+        });
+    </script>
 
-
-
-
-    <!-- agregamos la referencia a los scripts que vamos a utiliar-->
-    <!--Angular-->
-    <script src="../scripts/angular.min.js"></script>
-    <script src="../scripts/angular-route.js"></script>
-    <!--Angular-->
-    <script src="../scripts/bootstrap.min.js"></script>
-
-    <script type="text/javascript" src="js/agenda.js"></script>
-    <script type="text/javascript" src="controllers/notasController.js"></script>
-    <script type="text/javascript" src="models/notasModel.js"></script>
 </body>
 </html>

@@ -94,6 +94,20 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="controllers\PersonasController.js" />
+    <Content Include="home.html" />
+    <Content Include="index.html" />
+    <Content Include="main.js" />
+    <Content Include="model\PersonasModel.js" />
+    <Content Include="pages\acerca.html" />
+    <Content Include="pages\contacto.html" />
+    <Content Include="pages\home.html" />
+    <Content Include="scripts\app.js" />
+    <Content Include="views\create.html" />
+    <Content Include="views\delete.html" />
+    <Content Include="views\home.html" />
+    <Content Include="views\list.html" />
+    <Content Include="views\update.html" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -167,7 +181,6 @@
     <Content Include="Content\themes\base\theme.css" />
     <Content Include="Content\themes\base\tooltip.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="index.html" />
     <Content Include="scripts\ai.0.22.9-build00167.js" />
     <Content Include="scripts\ai.0.22.9-build00167.min.js" />
     <Content Include="scripts\angular-animate.js" />
@@ -951,9 +964,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="controllers\" />
-    <Folder Include="helpers\" />
-    <Folder Include="models\" />
+    <Folder Include="app\" />
     <Folder Include="views\shared\" />
   </ItemGroup>
   <PropertyGroup>
