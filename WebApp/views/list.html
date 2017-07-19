@@ -1,1 +1,52 @@
-﻿<h3>LISTA DE PERSONAS</h3>
+﻿<div class="jumbotron text-center">
+
+    <div ng-controller="personasController" ng-init="Listar()" class="divList">
+        <p class="divHead">Lista de Personas</p>
+        <table cellpadding="12" class="table table-bordered table-hover">
+            <tr>
+                <td>
+                    <b>id</b>
+                </td>
+                <td>
+                    <b>Correo</b>
+                </td>
+                <td>
+                    <b>Pass</b>
+                </td>
+                <td>
+                    <b>Nombre</b>
+                </td>
+                <td>
+                    <b>Direccion</b>
+                </td>
+           
+                <td>
+                    <b>Actions</b>
+                </td>
+            </tr>
+            <tr ng-repeat="per in personas">
+                <td>
+                    {{per.id}}
+                </td>
+                <td>
+                    {{per.correo}}
+                </td>
+                <td>
+                    {{per.pass}}
+                </td>
+                <td>
+                    {{per.nombre}}
+                </td>
+                <td>
+                    {{per.direccion}}
+                </td>
+      
+                <td>
+                    <input type="button" class="btn btn-warning" value="Update" ng-click="UpdateEmp(per)" />
+                    <input type="button" class="btn btn-danger" value="Delete" ng-click="DeleteEmp(per)" />
+                </td>
+            </tr>
+        </table>
+
+    </div>
+    </div>
